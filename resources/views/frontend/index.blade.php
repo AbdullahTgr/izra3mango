@@ -18,7 +18,7 @@ Plant a mango
 @endsection
 @else
 @section('meta')
-
+ 
 
 <meta name="description" content="مراحل نمو شجرة المانجو بالصور">
 <meta property="og:title" content="ازرع مانجو | شجرة المانجو">
@@ -160,12 +160,12 @@ Plant a mango
         @if (session()->get('language') === 'english')
         <div class="row al_center fl_center title_10">
           
-          <div class="col-auto"><a href="{{ route('categoryproductsen', $category->category_slug_en) }}">Services</a></div>
+          <div class="col-auto"><a href="{{ route('categoryproductsen', $category->category_slug_en) }}">Quick Qute</a></div>
         </div>
         @else
         <div class="row al_center fl_center title_10">
           
-          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">خدمات</a></div>
+          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">معلومة سريعة</a></div>
         </div>
         @endif
 
@@ -216,9 +216,9 @@ Plant a mango
         @else
         <div class="row al_center fl_center title_10">
           <div class="col-auto col-md">
-            <h3 class="dib tc section-title fs__24">الفئات</h3>
+            <h3 class="dib tc section-title fs__24">الاصناف</h3>
           </div>
-          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">عرض الفئة</a></div>
+          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">عرض الصنف</a></div>
         </div>
         @endif
 
@@ -367,11 +367,11 @@ Plant a mango
       <div class="fashion-ten__tab-wrap container">
         <div class="wrap_title  des_title_8">
           <h3 class="section-title tc pr flex fl_center al_center fs__24 title_8">
-            <span class="mr__10 ml__10">{{ session()->get('language') === 'bangla' ? 'احصل علي افضل المنتجات' : 'Take your best product' }}</span>
+            <span class="mr__10 ml__10">{{ session()->get('language') === 'bangla' ? 'احصل علي افضل الاصناف' : 'Take your best product' }}</span>
           </h3>
           <span class="dn tt_divider"><span></span><i class="dn clprfalse title_8 la-gem"></i><span></span></span>
           <span class="section-subtitle db tc">
-            {{ session()->get('language') === 'bangla' ? 'منتجنا خدمة لك ' : 'Our product is serve just for you .You just add to cart and enjoy' }}
+            {{ session()->get('language') === 'bangla' ? 'صنفنا خدمة لك ' : 'Our product is serve just for you .You just add to cart and enjoy' }}
           </span>
         </div>
         <div class="tab_se_wrap">
@@ -584,7 +584,7 @@ Plant a mango
 
           </div>
           @if (session()->get('language') === 'bangla')
-          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">كل المنتجات </a></div>
+          <div class="col-auto"><a href="{{ route('categoryproductsbn', $category->category_slug_bn) }}">كل الصنفات </a></div>
           @else
           <div class="col-auto"><a href="{{ route('categoryproductsen', $category->category_slug_en) }}">all product</a></div>
           @endif
@@ -694,7 +694,7 @@ Plant a mango
         <div class="medizin_laypout">
           <div class="product-cd-header in_flex wrap al_center fl_center tc">
             <h6 class="product-cd-heading section-title">
-              {{ session()->get('language') === 'bangla' ? 'منتج مميز' : 'Featured product' }}
+              {{ session()->get('language') === 'bangla' ? 'صنف مميز' : 'Featured product' }}
             </h6>
 
           </div>
